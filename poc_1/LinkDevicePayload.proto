@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+message LinkDevicePayload {
+    message Payload {
+        message Data {
+            required uint32 i1 = 1;
+            required uint32 i2 = 2;
+        }
+        required string device_id = 1;
+        required string device_cert = 2;
+        required string device_name = 6;
+        required string s7 = 7;
+        required uint32 i8 = 8;
+        required Data d = 9;
+        required uint32 i10 = 10;
+        required uint32 i12 = 12;
+    }
+    required Payload p = 1;
+}
